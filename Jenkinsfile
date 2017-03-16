@@ -4,6 +4,7 @@ pipeline {
         stage('Example') {
             steps {
                  echo 'Hello, RabbitMQ'
+                 sh 'rabbitmq-server'
             }
         }
     }
