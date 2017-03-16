@@ -6,10 +6,6 @@ pipeline {
 
     }
 
-    options {
-
-
-    }
 
     stages {
         stage('Example') {
