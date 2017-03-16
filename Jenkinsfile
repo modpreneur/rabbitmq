@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            dockerfile true
+            dockerfile './Dockerfile'
             args '-p 15679:15672 -p 5679:15672'
         }
 
