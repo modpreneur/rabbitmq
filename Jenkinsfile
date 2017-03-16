@@ -1,8 +1,10 @@
 pipeline {
     agent { dockerfile true }
     stages {
-        steps {
-            echo 'Hello, RabbitMQ'
+        stage('Example') {
+            steps {
+                 echo 'Hello, RabbitMQ'
+            }
         }
     }
 }
