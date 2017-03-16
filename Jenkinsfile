@@ -1,7 +1,10 @@
 pipeline {
     agent {
-        dockerfile true
-        args '-p 15679:15672 -p 5679:15672'
+        docker {
+            dockerfile true
+            args '-p 15679:15672 -p 5679:15672'
+        }
+
     }
     stages {
         stage('Example') {
