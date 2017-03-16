@@ -10,6 +10,9 @@ pipeline {
             steps {
                  echo 'Hello, RabbitMQ'
                  sh 'rabbitmq-server'
+                 properties {
+
+                 }
             }
         }
     }
