@@ -5,14 +5,17 @@ pipeline {
         }
 
     }
+
+    options {
+
+
+    }
+
     stages {
         stage('Example') {
             steps {
                  echo 'Hello, RabbitMQ'
                  sh 'rabbitmq-server'
-                 properties {
-
-                 }
             }
         }
     }
